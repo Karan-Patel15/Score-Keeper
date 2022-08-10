@@ -15,6 +15,11 @@
         <div class="columns is-centered">
             <div class="column is-half">
                 <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Basketball Scorekeeper
+                        </p>
+                    </header>
                     <div class="card-content">
                         <div class="card-image">
                             <figure class="image is-4by3">
@@ -22,8 +27,8 @@
                             </figure>
                         </div>
                         <div class="content">
-                            <h1><span id="p1Header">0</span> to <span id="p2Header">0</span></h1>
-                            <label for="dropdown">Playing To:</label>
+                            <h1 is-size-1><span id="p1Header">0</span> to <span id="p2Header">0</span></h1>
+                            <label for="dropdown is-size-2">Playing To:</label>
 
                             <div class="select is-rounded is-small">
                                 <select name="playUntil" id="dropdown">
@@ -40,9 +45,12 @@
                         </div>
                     </div>
                     <footer class="card-footer">
-                        <button class="card-footer-item button" id="addPlayer1">+1 Player 1</button>
-                        <button class="card-footer-item button" id="addPlayer2">+1 Player 2</button>
-                        <button class="card-footer-item button" id="reset">Reset</button:id>
+                        <button class="card-footer-item button is-info is-light is-medium" id="addPlayer1">+1 Player
+                            1</button>
+                        <button class="card-footer-item button is-info is-light is-medium" id="addPlayer2">+1 Player
+                            2</button>
+                        <button class="card-footer-item button is-danger is-light is-medium" id="reset">Reset
+                            </button:id>
                     </footer>
                 </div>
             </div>
