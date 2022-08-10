@@ -13,11 +13,11 @@ buttonP1.addEventListener("click", function(e) {
     if (!gameOver) {
         if (playerOneScore < playUntil) {
             playerOneScore++;
-            p1Header.innerText = `${playerOneScore}`;
+            p1Span.innerText = `${playerOneScore}`;
         } 
         if (playerOneScore === playUntil) {
             gameOver = true;
-            p1Span.style.color = "green";
+            p1Span.classList.add("win");
         }
     }
     
@@ -28,11 +28,11 @@ buttonP2.addEventListener("click", function(e) {
     if (!gameOver) {
         if (playerTwoScore < playUntil) {
             playerTwoScore++;
-            p2Header.innerText = `${playerTwoScore}`;
+            p2Span.innerText = `${playerTwoScore}`;
         }
         if (playerTwoScore === playUntil) {
             gameOver = true;
-            p2Span.style.color = "green";
+            p2Span.classList.add("win");
         }
     }
     
@@ -48,4 +48,8 @@ reset.addEventListener("click", function(e) {
     playerOneScore = 0;
     playerTwoScore = 0;
     gameOver = false;
+    p1Span.innerText = "0";
+    p2Span.innerText = "0";
+    p1Span.classList.remove("win");
+    p2Span.classList.remove("win");
 });
